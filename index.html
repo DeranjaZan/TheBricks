@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+    <title>Zogica</title>
+</head>
+<body onload="drawIt()">
+	<p id="ptocke">Točke: <mark id="tocke">0</mark></p>
+	<p id="pcas">Čas: <mark id="cas">00:00</mark></p>
+	<p id="plives">Življenja:
+	<img id="srcek1" src="images/srcek.png" width="20" height="20">
+	<img id="srcek2" src="images/srcek.png" width="20" height="20">
+	<img id="srcek3" src="images/srcek.png" width="20" height="20"></p>
+	
+	<div id="coin">
+    <canvas id="canvas" width="500px" height="700px"></canvas>
+	
+	<button id="button2" onclick="tip()">Miška</button>
+	<button id="button3" onclick="tip2()">Tipkovnica</button>
+		<div id="pozdrav"><p id="ppozdrav">Pozdravljeni v igri The Bricks.</br></br></br>
+Navodila igre so preprosta. </br></br>
+ Namen te igre je da uničiš čim več "opek".</br>Sive plošče je treba dvakrat zadeti da se razbijejo.</br> Če želite začeti igro kliknite Zacni.</br>Če želite spremeniti vnos za premik ploščka </br>kliknite gumb pod samo igro.
+</br></br>Čas, točke in življenja pa so prikazana zgoraj levo. </br></br> To je to, SREČNO!</p></div><button id="button" onclick="init()">Začni z premikanjem žoge</button>
+<div id="restart"><p id="ppozdrav">Izgubili ste, več sreče prihodnjič.</br> Dosegli ste Točk:<mark id="tocke2">0</mark> v <mark id="cas2"></mark> sekundah</p></div> <button id="button4" onclick="restart()">restart</button>
+<div id="restart2"><p id="ppozdrav">Čestitam zmagali ste.</br> Dosegli ste Točk: <mark id="tocke3">0</mark> v <mark id="cas3"></mark> sekundah</p></div>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+<script src="javascript/script.js">
+	</script>
+</body>
+</html>
